@@ -1,0 +1,168 @@
+\documentclass{beamer}
+\usetheme{Madrid}
+
+\title{Project - Inventory Tracking System(ITS)} 
+\author{P.Anudeep Rao \\ P.Rishi Manoj \\ J.Varshini}
+\date{May 22, 2022}
+\begin{document}
+
+
+\begin{frame}
+    \titlepage 
+\end{frame}
+
+
+\begin{frame}{Outline}
+    \tableofcontents
+\end{frame}
+
+\section{Abstract}
+\begin{frame}{Abstract}
+    \begin{enumerate}[]
+        \item This project is aimed at developing a desktop based application named Inventory Tracking System(ITS) for managing the details of inventory of a department in a college.
+        \begin{itemize}
+            \item Inventory Tracking System (ITS) is a tool that is used to manage/track the inventory of CSE Department.
+        \end{itemize}
+    \end{enumerate}
+\end{frame}
+
+
+\section{Field}
+\begin{frame}{Field}
+	\underline{\textbf{Field}}: \\
+\begin{itemize}
+\item These are the different areas/categories of places which a department comprises off.
+\item The following are the types of fields:
+\begin{itemize}
+\item Lab
+\item Class
+\item Office
+\item Library
+\end{itemize} 
+\end{itemize}
+\end{frame}
+
+\section{Object Classes}
+\begin{frame}{Object Classes}
+	\underline{\textbf{Object Class}}: \\
+	\begin{itemize}
+	\item An object class is the type of object in the field.
+	\item ex: Boards, projector, benches etc.
+	\end{itemize}
+\end{frame}
+
+\section{Object Instances}
+\begin{frame}{Object Instances}
+	\underline{\textbf{Object Instances}}: \\	
+	\begin{itemize}
+	\item The single entity of an object class is called as an object instance.
+	\end{itemize}
+\end{frame}
+
+\section{Roles}
+\begin{frame}{Roles}
+\underline{\textbf{Roles}}:\\
+\begin{itemize}
+\item These are the positions of responsibilities which are needed to maintain the inventory.
+\item The following are the types of roles:
+\begin{itemize}
+    \item Admin
+    \item Operations Manager
+    \item Supervisor
+    \item Faculty
+\end{itemize}
+\end{itemize} 
+
+\end{frame}
+
+\section{Admin}
+
+\section{Role - Admin}
+\begin{frame}{Role - Admin}
+    \begin{enumerate}[]
+        \item Admin
+        \begin{itemize}
+            \item Admin appoints Operations Manager for each field.
+            \item Verifying the info of the Operations Managers' and updating it to the database.
+            \item He can access all the info of the inventory of the department.
+            \item Admin provides the details of the sellers.
+        \end{itemize}
+    \end{enumerate}
+\end{frame} 
+
+\section{Role - Operations Manager}
+\begin{frame}{Role - Operations Manager}
+    \begin{enumerate}[]
+        \item Operations Manager:
+        \begin{itemize}
+        \item Each field has a group or a single operations manager.
+            \item OM has the power of creation and deletion the object classes for a field.
+            \item OM appoints supervisor to a set of object classes or a single object class for maintaining the object classes.
+            \item Verifying the info of the Supervisior and updating it to the database.
+            \item OM can access all the info of the inventory of the field to which he is assigned to.
+        \end{itemize}
+    \end{enumerate}
+\end{frame} 
+
+\section{Role - Supervisor}
+\begin{frame}{Role - Supervisor}
+    \begin{enumerate}[]
+        \item Supervisor:
+        \begin{itemize}
+            \item Supervisor adds or deletes a particular object instances.
+            \item Supervisor can update the status of an object instance.
+            \item Supervisor can access all the info of the inventory of the object classes which he was assigned for.
+            \item The Supervisor is the person who buys the required product from the seller list provided by the Admin.
+            \item Tracking of object instances is done based on an ID assigned to them.
+        \end{itemize}
+    \end{enumerate}
+\end{frame}
+
+\section{Role - Faculty}
+\begin{frame}{Role - Faculty}
+    \begin{enumerate}[]
+        \item Faculty can access the info of inventory of Lab, Library and Classroom in view only mode.
+    \end{enumerate}
+\end{frame}
+
+\section{Technical Details}
+\begin{frame}{Technical Details}
+\begin{itemize}
+\item Frontend : JavaFX 
+\item Backend : Java
+\item Database : MySQL 
+\item Tools used : Scene Builder, MySQL Workbench
+\item IDE used : Intellej IDEA
+\end{itemize}
+\end{frame}
+
+\section{Work Split}
+\begin{frame}{Work Split in Project}
+\begin{itemize}
+\item Frontend : 
+	\begin{itemize}
+	\item Primary contribution : 1RishiManoj.P, Varshini.J
+	\end{itemize}
+\item Backend :
+\begin{itemize}
+\item Primary contribution : Anudeep Rao.P 
+\item Helper : Varshini.J
+\end{itemize}
+
+\item Database : 
+\begin{itemize}
+\item Primary contribution : Anudeep Rao.P
+\end{itemize}
+
+\end{itemize}
+\end{frame}
+
+\begin{frame}{}
+\begin{itemize}
+\item For a more elaborated explanation of the project we request the reader to please look into the PDF's Frontend.pdf, Backend.pdf
+\end{itemize}
+\end{frame}
+
+
+
+\end{document}

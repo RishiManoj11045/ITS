@@ -1,0 +1,184 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{float}
+\usepackage{enumerate}
+\usepackage{graphicx}
+%\usepackage{gensymb}
+\usepackage[none]{hyphenat}
+\usepackage[left=1.5cm,right=1.5cm,top=1cm,bottom=1cm]{geometry}
+\pagenumbering{gobble}
+
+\title{\textbf{Project - Inventory Tracking System(ITS)}}
+\author{P.Anudeep Rao\\ P.Rishi Manoj\\ J.Varshini}
+\date{May 22, 2022}
+
+\begin{document}
+    \maketitle
+    \begin{Large}
+     \centering 
+     \section*{Front End Implementation Details}
+    \end{Large}
+    
+    \begin{enumerate}
+    \item When opened, different roles are displayed.
+    \begin{itemize}
+    \item Admin
+    \item Operations Manager
+    \item Supervisor
+    \item Faculty
+    \end{itemize}
+    \item A role is selected, and credentials are to be entered.
+    \end{enumerate}
+    
+    \newpage 
+    
+    \section{Admin Mode:}
+    \begin{enumerate}
+    \item Appoint Operations Manager for the fields.
+    \begin{itemize}
+    \item The fields are displayed.
+    \item Select the field for which you want to appoint the Operation Manager.
+    \item The details of the Operations Manager is stored in the database by giving required info.
+    \end{itemize}
+    
+    \item View the profile of Operation Manager
+    \begin{itemize}
+    \item The list of Operations Managers is shown.
+    \item Select the Operation Manager to know the info of OM.
+    \end{itemize}
+    
+    \item Remove Operation Manager
+    \begin{itemize}
+    \item List of Operation Managers is shown.
+    \item Select the Operation Manager whom you want to remove.(The total data of the person is removed)
+    \end{itemize}
+    
+    \item Providing the details of sellers
+    \begin{itemize}
+    \item The Seller Info is to be given by the Admin and is stored in the database.
+    \end{itemize}
+        
+    \item Accessing all the info of the Department.
+    \begin{itemize}
+    \item All the fields are listed.
+    \item A field is selected then the view is changed which is similar to that of the operations manager.
+    \end{itemize}
+    
+    \item Change Password
+    \begin{itemize}
+    \item Enter Old Password.
+    \item Enter New Password.
+    \item Confirm New Password.(The new password is updated in the database.)
+    \end{itemize}
+    \end{enumerate}
+    
+    \newpage
+    
+\section{Operations Manager Mode:}
+
+	\begin{enumerate}
+	\item Add new Object classes.
+	\begin{itemize}
+	\item Enter the name of the object class which you want to create.(The object class is created.)
+	\end{itemize}
+	
+	\item Delete object classes.
+	\begin{itemize}
+	\item List of the object classes is shown.
+	\item Select the object class and click delete button.(The object class data is deleted.)
+	\end{itemize}
+	
+	
+	\item Appoint Supervisor for Object Class(es)
+	\begin{itemize}
+		\item The info of the Supervisor is given by the OM and the object class for which he is Supervisor, this info is stored in the database.
+	\end{itemize}
+	
+	\item View Supervisor Info
+	\begin{itemize}
+	\item List of all Supervisors in Operation Manager's Field is shown.
+	\item Select a supervisor
+	\item Info of the supervisor is displayed. 
+	\end{itemize}
+	
+	\item View Object instance Info
+	\begin{itemize}
+	\item All the object instances in the object classes are shown which can be filtered by the OM for viewing.
+	\item Select one of the object classes. 
+	\item After selecting one object instance, the whole info of the object instance is displayed.
+	\end{itemize}
+	
+	\item Change Password
+    \begin{itemize}
+    \item Enter Old Password.
+    \item Enter New Password.
+    \item Confirm New Password.(The new password is updated in the database.)
+    \end{itemize}
+	\end{enumerate}
+    
+    \newpage
+    
+    \section{Supervisor Mode:}
+    \begin{enumerate}
+    \item Add object instances and store info of a bought item.
+    \begin{itemize}
+    \item The Item Info is asked which is given by the Supervisor. (Every object is assigned an IITH ID and the count of the object class is kept track.) 
+    \end{itemize}
+    
+    \item Delete object instances
+    \begin{itemize}
+	\item List of the object instances is shown.
+	\item Select the object instance.
+	\item Then click on the delete button, the instance is deleted.
+	\end{itemize}
+	
+	\item Update status of an object instance. (Working/Damaged/Under Repair)			
+	\begin{itemize}
+	\item List of the object instances is shown.
+	\item Select the object instance.
+	\item Then, the status of the instance can be updated.
+	\end{itemize}
+	
+	\item Access Info of Object classes assigned to the Supervisor.
+	\begin{itemize}
+	\item All the object instances in the object classes under the  Supervisor are shown.
+	\item Select any of the object instance.
+	\item After Selecting, the whole info of the object instance is displayed.
+	\end{itemize}
+	
+	\item Change Password
+    \begin{itemize}
+    \item Enter Old Password.
+    \item Enter New Password.
+    \item Confirm New Password.(The new password is updated in the database.)
+    \end{itemize}
+    \end{enumerate}
+    
+    \newpage
+    \section{Faculty}
+    \begin{enumerate}
+    \item Select the field about which Faculty wants the info.
+    \begin{itemize}
+    \item Lab
+    \item Library
+    \item Classroom
+    \end{itemize}
+    
+    \item After selecting, 
+    \begin{itemize}
+	\item All the object instances in the object classes are shown which can be filtered by the faculty for viewing.
+	\item Select one of the object instance. 
+	\item After selecting one object instance, the whole info of the object instance is displayed.
+    \end{itemize}
+    
+    \item Change Password
+    \begin{itemize}
+    \item Enter Old Password.
+    \item Enter New Password.
+    \item Confirm New Password.(The new password is updated in the database.)
+    \end{itemize}
+    \end{enumerate}
+\end{document}

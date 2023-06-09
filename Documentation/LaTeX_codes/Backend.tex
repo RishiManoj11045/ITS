@@ -1,0 +1,141 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{float}
+\usepackage{enumerate}
+\usepackage{graphicx}
+%\usepackage{gensymb}
+\usepackage[none]{hyphenat}
+\usepackage[left=1.5cm,right=1.5cm,top=1cm,bottom=1cm]{geometry}
+\pagenumbering{gobble}
+
+\title{\textbf{Project - Inventory Tracking System(ITS)}}
+\author{P.Anudeep Rao\\ P.Rishi Manoj\\ J.Varshini}
+\date{May 22,2022}
+
+\begin{document}
+    \maketitle
+    \begin{Large}
+     \centering 
+     \section*{Back End Implementation Details}
+    \end{Large}
+    
+    \begin{itemize}
+       \item Tracking of roles and object instances is done using IITH(IIT Hyderabad) ID assigned. 
+       \item The process of generation of IITH ID is :
+    \end{itemize}
+    
+    \section*{Assigning IITH ID:}
+    \begin{enumerate}
+    \item For Roles:
+    \begin{itemize}
+    \item Admin:\\ [5pt]
+    General Form : ADX (eg: AD1, AD22, AD123)
+    
+    \item Operation Manager:
+    \begin{itemize}
+    \item For Library Field : OMLRX (LR = Library)
+    \item For Class Field   : OMCLX (CL = Classroom)
+    \item For Office Field  : OMOFX (OF = Office)
+    \item For Lab Field     : OMLBX (LB = Lab) 
+    \end{itemize}
+    
+    \item Supervisor:
+    \begin{itemize}
+    \item For Library Field : SVLRX (LR = Library)
+    \item For Class Field   : SVCLX (CL = Classroom)
+    \item For Office Field  : SVOFX (OF = Office)
+    \item For Lab Field     : SVLBX (LB = Lab)
+    \end{itemize}
+    
+    \item Faculty:\\[5pt]
+    General Form : CSX 
+    
+    \item Seller: \\
+    No IITH ID is given to seller.     
+    \end{itemize}
+ 
+ 	\item For Items:   \\[10 pt]
+	Eg : Bench $\longrightarrow$ BENX 
+
+Method for assigning ID :\\[5 pt]
+(First 3 letters of the object class)+ (Serial Number of the object in that year)
+    
+    \end{enumerate}
+
+\newpage
+
+\section*{Info of Roles which are stored in the database:}
+\begin{enumerate}
+\item Admin:
+\begin{enumerate}[i)]
+\item Name of the Admin
+\item IITH ID
+\item IITH Mail ID
+\item Password
+\item Contact Number
+\end{enumerate}
+
+\item Operations Manager:
+\begin{enumerate}[i)]
+\item Name of the Operations Manager
+\item Field of operations
+\item Appointed by 
+\item IITH ID
+\item IITH Mail ID
+\item Password
+\item Contact Number
+\end{enumerate}
+
+\item Supervisor
+\begin{enumerate}[i)]
+\item Name of the Supervisor
+\item IITH ID
+\item IITH Mail ID
+\item Password
+\item Contact Number
+\item Appointed by
+\item Field of supervision
+\item Info about the classes of the objects which the supervisor maintains
+\end{enumerate}
+
+\item Faculty:
+\begin{enumerate}[i)]
+\item Name of the Faculty
+\item IITH ID
+\item IITH Mail ID
+\item Password
+\item Contact Number
+\end{enumerate}
+
+\item Seller:
+\begin{enumerate}[i)]
+\item Name of the Seller
+\item Company Name
+\item Mail ID (Personal)
+\item Contact Number
+\item Object Class selled by the seller
+\end{enumerate}
+\end{enumerate}
+\newpage
+
+\section*{Info of the Object instance which are stored in the database: }
+
+	\begin{enumerate}
+	\item IITH ID of the item 
+	\item Field to which the item belongs
+	\item Type of the item
+	\item Company Name
+	\item Company ID
+	\item Price
+	\item Seller Name
+	\item Supervisor of the item
+	\item Current Location
+	\item Status of the item (Working/Damaged/Under Repair)
+	\item Date of buying 
+	\end{enumerate}
+	
+
+\end{document}

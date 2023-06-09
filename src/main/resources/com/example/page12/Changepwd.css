@@ -1,0 +1,46 @@
+.root{
+ -fx-font-family: 'JetBrains Mono';
+ -fx-font-weight: bold;
+ -fx-background-color: #D08878;
+ -fx-background-repeat: no-repeat;
+ -fx-background-size: stretch;
+}
+
+#ChangePwdHeading{
+ -fx-background-color: lightblue ;
+ -fx-text-fill: #21A679;
+ -fx-border-radius: 10px;
+ -fx-background-radius: 10px;
+}
+
+.button{
+ -fx-background-color: white;
+ -fx-text-fill: black;
+ -fx-border-radius: 15px;
+ -fx-background-radius: 15px;
+}
+
+.button: hover{
+ -fx-background-color: grey;
+ -fx-text-fill: white;
+}
+
+.button: pressed{
+ -fx-background-color: grey;
+ -fx-text-fill: white;
+}
+
+.label{
+ -fx-text-fill: #2542E7;
+}
+
+#hiddenLabel{
+ -fx-text-fill: red;
+}
+
+.text-field{
+ -fx-border-color: blue;
+ -fx-border-radius: 20px;
+ -fx-background-radius: 20px;
+ -fx-pref-column-count: 20;
+}

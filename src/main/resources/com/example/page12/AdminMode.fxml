@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.page12.AdminModeController" stylesheets="@AdminMode.css">
+   <top>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <Button fx:id="btnChangePassword" focusTraversable="false" mnemonicParsing="false" onAction="#changePassword" text="Change Password" />
+         <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="46.0" prefWidth="174.0" text="ADMIN Mode" HBox.hgrow="ALWAYS">
+            <font>
+               <Font size="27.0" />
+            </font>
+            <HBox.margin>
+               <Insets left="150.0" />
+            </HBox.margin>
+         </Label>
+         <Button fx:id="logout" focusTraversable="false" mnemonicParsing="false" onAction="#myLogout" text="LOGOUT" HBox.hgrow="ALWAYS">
+            <HBox.margin>
+               <Insets bottom="5.0" left="175.0" right="5.0" top="5.0" />
+            </HBox.margin>
+         </Button>
+      </HBox>
+   </top>
+   <center>
+      <VBox alignment="CENTER" prefHeight="270.0" prefWidth="700.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label text="1. Select the field which you want to enter inorder to view/edit it's object info:" VBox.vgrow="ALWAYS">
+               <font>
+                  <Font size="17.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="30.0" />
+               </VBox.margin>
+            </Label>
+            <VBox prefHeight="276.0" prefWidth="700.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="71.0" prefWidth="700.0" VBox.vgrow="ALWAYS">
+                     <children>
+                        <Button fx:id="lab" focusTraversable="false" mnemonicParsing="false" onAction="#OnbtnLab" prefHeight="32.0" prefWidth="58.0" text="Lab" HBox.hgrow="ALWAYS">
+                           <HBox.margin>
+                              <Insets bottom="15.0" left="30.0" right="15.0" top="15.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="library" focusTraversable="false" mnemonicParsing="false" onAction="#OnbtnLibrary" text="Library" HBox.hgrow="ALWAYS">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+                           </HBox.margin>
+                        </Button>
+                        <Button fx:id="classroom" focusTraversable="false" mnemonicParsing="false" onAction="#OnbtnClassroom" text="Classroom" HBox.hgrow="ALWAYS">
+                           <font>
+                              <Font size="19.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+                           </HBox.margin>
+                        </Button>
+                        <Button fx:id="office" focusTraversable="false" mnemonicParsing="false" onAction="#OnbtnOffice" text="Office" HBox.hgrow="ALWAYS">
+                           <font>
+                              <Font size="21.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="112.0" prefWidth="700.0" VBox.vgrow="ALWAYS">
+                     <children>
+                        <Label text="2. Click the below button to edit/view seller info:">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="-235.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="700.0" VBox.vgrow="ALWAYS">
+                     <children>
+                        <Button fx:id="sellerInfo" focusTraversable="false" mnemonicParsing="false" onAction="#adminsellerinfoview" text="SELLER INFO" HBox.hgrow="ALWAYS">
+                           <font>
+                              <Font size="19.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets bottom="50.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>
